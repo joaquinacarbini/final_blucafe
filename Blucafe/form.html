@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"type="text/css" href="estilo.css" />
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    </head>
+   <body>
+    <title>BluCafe</title>
+    <header> 
+        <div>
+            <a href="index.html"><img src="./Imagenes/logo.png" style= "width: 200px"></a>
+        </div>
+        <div class="topnav"id="myTopnav" >
+            <a href="index.html"> Inicio</a>
+            <a href="menu2.html">Menú</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Contactanos.html"> Reservas</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    </header>
+    <article>
+        <div class="nuestros">
+            <p>Gracias por confiar en nosotros</p>
+        </div>
+        <div class="gracias">
+            <img src="./Imagenes/gracias.jpg" width="400px">
+        </div>
+    </article>
+    <footer>
+        <div class="pie">
+            <img src="./Imagenes/instagram.png" alt="Instagram">
+            <p> @blucafe.sanisidro</p>
+        </div> <br>
+        <div class="pie">
+            <img src="./Imagenes/ubicacion.png">
+            <p> Juan Bautista Lasalle 441, San Isidro, Buenos Aires</p>
+        </div>
+    </footer>   
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>  
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"type="text/css" href="estilo.css" />
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    </head>
+   <body>
+    <title>BluCafe</title>
+    <header> 
+        <div>
+            <a href="index.html"><img src="./Imagenes/logo.png" style= "width: 200px"></a>
+        </div>
+        <div class="topnav"id="myTopnav" >
+            <a href="index.html"> Inicio</a>
+            <a href="menu2.html">Menú</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Contactanos.html"> Reservas</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <article>
+        <nav class="nuestros">
+            <p> NUESTROS   PRODUCTOS</p>
+        </nav>
+        <nav class="productos1"> 
+            <div class="productos">
+                <img src="./Imagenes/blend.jpg" width="300px">
+                <button> Blend</button>
+            </div>
+            <div class="productos">
+                <img src="./Imagenes/bolsa.jpg" width="300px">
+                <button> Bolsa</button>
+            </div>
+            <div class="productos">
+                <img src="./Imagenes/cafegrano.jpg" width="300px">
+                <button> Cafe en grano</button>
+            </div>
+            <div class="productos">
+                <img src="./Imagenes/flores.jpg" width="300px">
+                <button> Flores</button>
+            </div>
+            <div class="productos">
+                <img src="./Imagenes/granola.jpg" width="300px">
+                <button> Granola</button>
+            </div>
+            <div class="productos">
+                <img src="./Imagenes/vaso.jpg" width="300px">
+                <button> Vaso térmico</button>
+            </div>
+            <div class="productos">
+                <img src="./Imagenes/taza.jpg" width="300px">
+                <button> Taza</button>
+            </div>
+        </nav>
+    </article>
+    <footer>
+        <div class="pie">
+            <img src="./Imagenes/instagram.png" alt="Instagram">
+            <p> @blucafe.sanisidro</p>
+        </div> <br>
+        <div class="pie">
+            <img src="./Imagenes/ubicacion.png">
+            <p> Juan Bautista Lasalle 441, San Isidro, Buenos Aires</p>
+        </div>
+    </footer>   
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script> 
+   </body>
+</html>

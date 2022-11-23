@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"type="text/css" href="estilo.css" />
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <title>BluCafe</title>
+    <header> 
+        <div>
+            <a href="index.html"><img src="./Imagenes/logo.png" style= "width: 200px"></a>
+        </div>
+        <div class="topnav"id="myTopnav" >
+            <a href="index.html"> Inicio</a>
+            <a href="menu2.html">Menú</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Contactanos.html"> Reservas</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+   <body>
+    <article class="reservas">
+        <div class="nuestros"> 
+            <p class="NUESTROS">Reserve  aquí</p>
+        </div>
+        <div style="align-content: center; text-align: center; font-size: 18px;">
+          <form class="reservas">
+              <h3><strong>Nombre:</strong> <input name="nombre" type="text" autofocus="autofocus" required placeholder="Nombre"></h3>
+              <h3><strong>Apellido:</strong> <input type="text" name="apellido" placeholder="Apellido"></h3>
+              <h3><strong>Email:</strong> <input type="email" name="mail" required placeholder="Email"></h3>
+              <h3><strong>Fecha:</strong> <input type="date" name="dia"></h3>
+              <h3><strong>Acompañantes: </strong>
+                  <input type="checkbox" name="opciones" id="opcion1" value="1">1
+                  <input type="checkbox" name="opciones" id="opcion2" value="2">2
+                  <input type="checkbox" name="opciones" id="opcion3" value="3">3 
+                  <input type="checkbox" name="opciones" id="opcion3" value="3">4
+                  <input type="checkbox" name="opciones" id="opcion3" value="3">5
+              </h3>
+              <h3><strong>Dejanos tu mensaje:</strong> <textarea name="mensaje" required="required" placeholder="Dejanos tu mensaje"></textarea> </h3>
+              <h3><input type="checkbox" name="acepto" value="SI">Acepto las condiciones</h3>
+              <button><a href="form.html">Enviar</a></button>
+          </form>
+    </article>
+    <footer>
+        <div class="pie">
+            <img src="./Imagenes/instagram.png" alt="Instagram">
+            <p> @blucafe.sanisidro</p>
+        </div> <br>
+        <div class="pie">
+            <img src="./Imagenes/ubicacion.png">
+            <p> Juan Bautista Lasalle 441, San Isidro, Buenos Aires</p>
+        </div>
+    </footer>   
+    <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script> 
+   </body>
+</html>
